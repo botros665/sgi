@@ -16,7 +16,13 @@ list=(0)
  ssdm = Social Security Death Master file
  real data (with SS stripped)
 """
-fi = open ("ssdmfinal.txt","r")
+try:
+    fi = open("ssdmfinal.txt", "r")
+except IOError:
+    print "Error: File does not exist."
+    exit()
+	  
+#fi = open ("ssdmfinal.txt","r")
 fo = open("output.csv", "w")
 
 line = fi.readlines()
