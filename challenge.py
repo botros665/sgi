@@ -4,7 +4,6 @@
 # find the year with the most number of people alive.
 #
 
-import string
 #
 # Variables
 #
@@ -22,7 +21,6 @@ except IOError:
     print "Error: File does not exist."
     exit()
 	  
-#fi = open ("ssdmfinal.txt","r")
 fo = open("output.csv", "w")
 
 line = fi.readlines()
